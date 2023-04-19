@@ -1,0 +1,16 @@
+git init
+git config --global user.name "renan silva"
+git config --global user.email renansantos.silva04@outlook.com
+
+git clone [https:// repository]
+- o git clone inicializa o repositorio local por tras enquanto faz um pull do repositorio remoto
+or 
+git remote add origin [https:// repository]
+git push -u origin master
+
+
+git add [file]
+git commit -m "[message]"
+
+em caso da mensagem ter sido errada
+git commit -- amend -m ["new message"] 

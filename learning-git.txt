@@ -1,9 +1,12 @@
+https://rogerdudler.github.io/git-guide/index.pt_BR.html
+
 git init
 git config --global user.name "renan silva"
 git config --global user.email renansantos.silva04@outlook.com
 
 git clone [https:// repository]
-- o git clone inicializa o repositorio local por tras enquanto faz um pull do repositorio remoto
+- o git clone inicializa o repositorio local por tras enquanto 
+    faz um pull do repositorio remoto
 or 
 git remote add origin [https:// repository]
 git push -u origin master
@@ -13,4 +16,23 @@ git add [file]
 git commit -m "[message]"
 
 em caso da mensagem ter sido errada
-git commit -- amend -m ["new message"] 
+git commit --amend -m ["new message"] or git commit -a -m ["new message"]
+
+git revert <commit> -> git revert 45111a
+
+git branch [name] -> criando uma branch
+git branch -m [new name] -> renomeando localmente
+- para renomear uma branch que já está remota, é necessário
+    realizar o push com -u(or --set-upstream)
+git branch -d [name] -> removendo uma branch localmente
+- remover uma remotamente -e com o push origin --delete [name-of-branch]
+
+git checkout <name-of-branch> -> para trocar de branch
+git checkout <commit hash> -> utilizando o git log para consegui o hash
+    :x -> para sair do log
+
+merge mesclar uma branch na outra
+rebase adicionar tudo de uma nova branch
+
+git stash
+git reset
